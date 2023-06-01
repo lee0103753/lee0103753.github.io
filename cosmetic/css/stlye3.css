@@ -63,14 +63,16 @@ header{
   color: lightcoral;
 }
 .pro{
-    width: 1280px;
-    height: 1000px;
-    margin: 0 auto;
+   width: 100%;
+   max-width: 1280px;
+   /* height: 1000px; */
+   margin: 0 auto;
 }
 .pro .base ,
 .pro .makeup{
-    width: 1280px;
-    height: 500px;
+    max-width: 1280px;
+    width: 100%;
+    /* height: 500px; */
 }
 .pro .base > p,
 .pro .makeup > p{
@@ -171,9 +173,32 @@ footer .foot p i{
   }
   .pro{
     width: 100%;
+    font-size: 18px;
+  }
+  .pro .base,
+  .pro .makeup{
+    height: 600px;
   }
   .pro img{
     width: 185px;
     height: 185px;
+  }
+  .pro_top {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .pro_top > div{
+    flex: 1 1 50%;
+  }
+  .pro_bottom {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 250px;
+  }
+  .pro_bottom > div{
+    flex: 1 1 50%;
+  }
+  footer{
+    margin-top: 100px;
   }
 }
